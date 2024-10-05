@@ -1,8 +1,8 @@
-class Human:
+class Pug:
   def __init__(self, name):
       self.name = name
 
-class Auto:
+class Food:
     def __init__(self, brand):
         self.brand = brand
         self.passengers = []
@@ -13,15 +13,15 @@ class Auto:
 
     def print_passengers(self):
         if self.passengers != []:
-            print(f"В автомобілі {self.brand} ssdsdsddds:")
+            print(f" food {self.brand} pug:")
             for passenger in self.passebgers:
                 print(passenger.name)
         else:
-            print(f"sdsdadsdsafaf {self.brand} ddfdgdggd!:")
+            print(f"food  {self.brand} ddfdgdggd!:")
 
-h1 = Human(input("dfjdfdfldfhflff: " ))
-h2 = Human("vetal")
+p1 = Pug(input("dfjdfdfldfhflff: " ))
+p2 = Pug("vetal")
 
-car1 = Auto ("Mercedes")
-car1.add_passengers(h1,h2)
+car1 = Food ("Acano")
+car1.add_passengers(p1,p2)
 car1.print_passengers_names()
